@@ -64,14 +64,6 @@ $('a[href*="#"]').on('click', function (e) {
 
 
 $(function() {
-
-    var url = window.location.href;
-    console.log(url);
-    if (url.indexOf('#') < 0) {
-        window.location.replace(url + "#");
-    } else {
-        window.location.replace(url);
-    }
     
 
     $('form').on('submit', function(event){
@@ -108,13 +100,13 @@ $(function() {
         
 
         const printToPage = function(family) {
-            $('.your-results').empty();
+            $('.results-wrapper').empty();
             let header = $('<h1>').text(family.name); // make an h1 element with the house name in it
             let image = $('<img>').attr('src', family.picture).attr('alt', family.alt);
             let text = $('<p>').text(family.text).addClass(family.color);
             let reTry = `<div class="tryAgain"><a href=""><p>Don't like what you see? Try again!</p></a></div>`;
 
-            $('.your-results').append(header, image, text, reTry).addClass(family.background).addClass('page');
+            $('.results-wrapper').append(header, image, text, reTry).addClass(family.background).addClass('page');
 
 
 
@@ -166,3 +158,6 @@ $(function() {
     
 
 });
+
+
+

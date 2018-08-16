@@ -145,5 +145,53 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   clip: rect(0 0 0);
   overflow: hidden; }
 
+html {
+  font-size: 16px; }
+
 .page {
   height: 100vh; }
+
+.wrapper {
+  width: 50%;
+  max-width: 1140px;
+  height: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.page p, .page label {
+  font-family: "Raleway";
+  font-size: 1.7rem; }
+
+fieldset {
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.your-results h1 {
+  font-family: "Great Vibes";
+  font-size: 7rem;
+  margin: 0; }
+
+.your-results img {
+  width: 300px; }
+
+.your-results p {
+  font-family: "Raleway";
+  font-size: 3rem; }
