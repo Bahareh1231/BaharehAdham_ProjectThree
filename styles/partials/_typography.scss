@@ -1,5 +1,14 @@
 html {
     font-size: 16px;
+    
+}
+body {
+    position: relative;
+    background: #fcac98;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #71ccdc, #a6ecf9, #fcac98,#d35131);
+    background: linear-gradient(to bottom, #71ccdc, #cef1f7, #f48f76, #d35131);
+    z-index: 20;
+
 }
 
 .page {
@@ -7,40 +16,94 @@ html {
 }
 
 .wrapper {
-    width: 50%;
+    width: 60%;
     max-width: 1140px;
     height: 100%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
 }
 
-.page {
-    p, label {
-        font-family: $font;
-        font-size: 1.7rem;
+.button {
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    a {
+        color: #2A2A20;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        text-decoration: none;
+        font-weight: 700;
+        padding: 20px 30px;
+        display: block;
+        border: black solid 2px;
+        border-radius: 50px;
+        font-size: 1.2rem;
+        background: white;
+        
+
     }
+    p {
+        margin: 0;
+    
+    }
+
+}
+
+.page {
+    .button {
+        align-self: center;
+    } 
+}
+
+.bold {
+    font-weight: 700;
 }
 
 fieldset {
     border: 0;
     display: flex;
     flex-direction: column;
+    font-family: $font;
+    font-size: 1.3rem;
+    .question {
+        padding: 10px 0;
+    }
+    .ask {
+        font-weight: 900;
+        font-family: $font;
+        font-size: 1.5rem;
+    }
+    
 }
 
-.your-results {
-    h1 {
-        font-family: $cursive;
-        font-size: 7rem;
-        margin: 0;
-    }
-    img {
-        width: 300px;
-    }
-    p {
-        font-family: $font;
-        font-size: 3rem;
-    }
+h1 {
+    font-family: $cursive;
+    font-size: 5rem;
 }
+
+
+input {
+    display: none;
+    &:checked + label {
+        font-weight: 700;
+    }
+    
+}
+
+label {
+    cursor: pointer;
+    display: block;
+    
+}
+
+form {
+    position: relative;
+    z-index: 30;
+}
+
+

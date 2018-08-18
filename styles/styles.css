@@ -148,11 +148,22 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 html {
   font-size: 16px; }
 
+body {
+  position: relative;
+  background: #fcac98;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #71ccdc, #a6ecf9, #fcac98, #d35131);
+  background: -webkit-gradient(linear, left top, left bottom, from(#71ccdc), color-stop(#cef1f7), color-stop(#f48f76), to(#d35131));
+  background: -webkit-linear-gradient(top, #71ccdc, #cef1f7, #f48f76, #d35131);
+  background: -o-linear-gradient(top, #71ccdc, #cef1f7, #f48f76, #d35131);
+  background: linear-gradient(to bottom, #71ccdc, #cef1f7, #f48f76, #d35131);
+  z-index: 20; }
+
 .page {
   height: 100vh; }
 
 .wrapper {
-  width: 50%;
+  width: 60%;
   max-width: 1140px;
   height: 100%;
   margin: 0 auto;
@@ -163,16 +174,46 @@ html {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center; }
 
-.page p, .page label {
-  font-family: "Raleway";
-  font-size: 1.7rem; }
+.button {
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50px; }
+  .button a {
+    color: #2A2A20;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 20px 30px;
+    display: block;
+    border: black solid 2px;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    background: white; }
+  .button p {
+    margin: 0; }
+
+.page .button {
+  -ms-flex-item-align: center;
+  align-self: center; }
+
+.bold {
+  font-weight: 700; }
 
 fieldset {
   border: 0;
@@ -182,16 +223,293 @@ fieldset {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
-  flex-direction: column; }
+  flex-direction: column;
+  font-family: "Lato";
+  font-size: 1.3rem; }
+  fieldset .question {
+    padding: 10px 0; }
+  fieldset .ask {
+    font-weight: 900;
+    font-family: "Lato";
+    font-size: 1.5rem; }
+
+h1 {
+  font-family: "Oswald";
+  font-size: 5rem; }
+
+input {
+  display: none; }
+  input:checked + label {
+    font-weight: 700; }
+
+label {
+  cursor: pointer;
+  display: block; }
+
+form {
+  position: relative;
+  z-index: 30; }
+
+.title-page .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+svg.snow {
+  fill: #e3f3f5;
+  height: 80px;
+  position: absolute; }
+
+@-webkit-keyframes flake {
+  0% {
+    top: 0;
+    left: 30%; }
+  100% {
+    top: 30%;
+    left: 30%; } }
+
+@keyframes flake {
+  0% {
+    top: 0;
+    left: 30%; }
+  100% {
+    top: 30%;
+    left: 30%; } }
+
+@-webkit-keyframes flake2 {
+  0% {
+    top: 0;
+    left: 45%; }
+  100% {
+    top: 30%;
+    left: 45%; } }
+
+@keyframes flake2 {
+  0% {
+    top: 0;
+    left: 45%; }
+  100% {
+    top: 30%;
+    left: 45%; } }
+
+@-webkit-keyframes flake3 {
+  0% {
+    top: 0;
+    left: 65%; }
+  100% {
+    top: 30%;
+    left: 65%; } }
+
+@keyframes flake3 {
+  0% {
+    top: 0;
+    left: 65%; }
+  100% {
+    top: 30%;
+    left: 65%; } }
+
+@-webkit-keyframes flake4 {
+  0% {
+    top: 0;
+    left: 10%; }
+  100% {
+    top: 30%;
+    left: 10%; } }
+
+@keyframes flake4 {
+  0% {
+    top: 0;
+    left: 10%; }
+  100% {
+    top: 30%;
+    left: 10%; } }
+
+.snow {
+  -webkit-animation-name: flake;
+  animation-name: flake;
+  -webkit-animation-duration: 7s;
+  animation-duration: 7s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear; }
+
+.snow2 {
+  -webkit-animation-name: flake2;
+  animation-name: flake2;
+  -webkit-animation-duration: 6s;
+  animation-duration: 6s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear; }
+
+.snow3 {
+  -webkit-animation-name: flake3;
+  animation-name: flake3;
+  -webkit-animation-duration: 8s;
+  animation-duration: 8s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear; }
+
+.snow4 {
+  -webkit-animation-name: flake4;
+  animation-name: flake4;
+  -webkit-animation-duration: 10s;
+  animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear; }
+
+svg.drop {
+  fill: #e3f3f5;
+  height: 80px;
+  position: absolute; }
+
+@-webkit-keyframes rain1 {
+  0% {
+    top: 35%;
+    left: 10%; }
+  100% {
+    top: 59%;
+    left: 10%; } }
+
+@keyframes rain1 {
+  0% {
+    top: 35%;
+    left: 10%; }
+  100% {
+    top: 59%;
+    left: 10%; } }
+
+@-webkit-keyframes rain2 {
+  0% {
+    top: 35%;
+    left: 45%; }
+  100% {
+    top: 59%;
+    left: 45%; } }
+
+@keyframes rain2 {
+  0% {
+    top: 35%;
+    left: 45%; }
+  100% {
+    top: 59%;
+    left: 45%; } }
+
+@-webkit-keyframes rain3 {
+  0% {
+    top: 35%;
+    left: 35%; }
+  100% {
+    top: 59%;
+    left: 35%; } }
+
+@keyframes rain3 {
+  0% {
+    top: 35%;
+    left: 35%; }
+  100% {
+    top: 59%;
+    left: 35%; } }
+
+@-webkit-keyframes rain4 {
+  0% {
+    top: 35%;
+    left: 60%; }
+  100% {
+    top: 59%;
+    left: 60%; } }
+
+@keyframes rain4 {
+  0% {
+    top: 35%;
+    left: 60%; }
+  100% {
+    top: 59%;
+    left: 60%; } }
+
+.drop1 {
+  -webkit-animation-name: rain1;
+  animation-name: rain1;
+  -webkit-animation-duration: 9s;
+  animation-duration: 9s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear; }
+
+.drop2 {
+  -webkit-animation-name: rain2;
+  animation-name: rain2;
+  -webkit-animation-duration: 10s;
+  animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear; }
+
+.drop3 {
+  -webkit-animation-name: rain3;
+  animation-name: rain3;
+  -webkit-animation-duration: 8s;
+  animation-duration: 8s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear; }
+
+.drop4 {
+  -webkit-animation-name: rain4;
+  animation-name: rain4;
+  -webkit-animation-duration: 9s;
+  animation-duration: 9s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear; }
+
+.question-two {
+  position: relative; }
+
+svg.wolf {
+  fill: #cef1f7;
+  width: 40%;
+  position: absolute;
+  bottom: 0;
+  right: 200px; }
+
+svg.fire {
+  position: absolute;
+  fill: rgba(218, 53, 53, 0.543);
+  bottom: 0;
+  z-index: 10; }
+
+.results-wrapper {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start; }
 
 .your-results h1 {
-  font-family: "Great Vibes";
-  font-size: 7rem;
   margin: 0; }
 
 .your-results img {
-  width: 300px; }
+  width: 50%; }
 
 .your-results p {
-  font-family: "Raleway";
-  font-size: 3rem; }
+  font-family: "Lato";
+  font-size: 2rem; }

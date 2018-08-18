@@ -1,0 +1,20 @@
+.results-wrapper {
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.your-results {
+    h1 {
+        margin: 0;
+    }
+    img {
+        width: 50%;
+    }
+    p {
+        font-family: $font;
+        font-size: 2rem;
+    }
+}
+
+
+
