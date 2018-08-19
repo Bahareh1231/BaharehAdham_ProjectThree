@@ -1,0 +1,235 @@
+// *********** SNOW FLAKES **************
+
+svg.snow {
+    fill: #e3f3f5;
+    height: 80px;
+    position: absolute; 
+   
+}
+
+@keyframes flake {
+    0% {
+        top: 0;
+        left: 30%; 
+    }
+    100% {
+        top: 30%;
+        left: 30%;
+    }
+}
+
+@keyframes flake2 {
+    0% {
+        top: 0;
+        left: 45%; 
+    }
+    100% {
+        top: 30%;
+        left: 45%;
+    }
+}
+
+@keyframes flake3 {
+    0% {
+        top: 0;
+        left: 65%; 
+    }
+    100% {
+        top: 30%;
+        left: 65%;
+    }
+}
+
+@keyframes flake4 {
+    0% {
+        top: 0;
+        left: 10%; 
+    }
+    100% {
+        top: 30%;
+        left: 10%;
+    }
+}
+
+
+.snow {
+    animation-name: flake;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.snow2 {
+    animation-name: flake2;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.snow3 {
+    animation-name: flake3;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.snow4 {
+    animation-name: flake4;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+// *********** RAINDROPS ***************
+
+svg.drop {
+    fill: #e3f3f5;
+    height: 80px;
+    position: absolute;
+}
+
+@keyframes rain1 {
+    0% {
+        top: 35%;
+        left: 10%;
+    }
+
+    100% {
+        top: 59%;
+        left: 10%;
+    }
+    
+}
+
+@keyframes rain2 {
+    0% {
+        top: 35%;
+        left: 45%;
+    }
+
+    100% {
+        top: 59%;
+        left: 45%;
+    }
+    
+}
+
+@keyframes rain3 {
+    0% {
+        top: 35%;
+        left: 35%;
+    }
+
+    100% {
+        top: 59%;
+        left: 35%;
+    }
+    
+}
+
+@keyframes rain4 {
+    0% {
+        top: 35%;
+        left: 60%;
+    }
+
+    100% {
+        top: 59%;
+        left: 60%;
+    }
+    
+}
+
+.drop1 {
+    animation-name: rain1;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.drop2 {
+    animation-name: rain2;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.drop3 {
+    animation-name: rain3;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.drop4 {
+    animation-name: rain4;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+
+// ***************** FIRE FLAMES ***************
+
+svg.flame {
+    fill: #EF866C;
+    position: absolute;
+    width: 130px
+}
+
+@keyframes flame1 {
+    0% {
+        top: 90%;
+        left: 85%;
+    }
+    100% {
+        top:63%;
+        left:85%;
+    }
+}
+
+@keyframes flame2 {
+    0% {
+        top: 90%;
+        left: 50%;
+    }
+    100% {
+        top:63%;
+        left:50%;
+    }
+}
+
+@keyframes flame3 {
+    0% {
+        top: 90%;
+        left: 75%;
+    }
+    100% {
+        top:63%;
+        left:75%;
+    }
+}
+
+
+
+.flame1 {
+    animation-name: flame1;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.flame2 {
+    animation-name: flame2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.flame3 {
+    animation-name: flame3;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}

@@ -1,11 +1,28 @@
-.question-seven {
-    
+.question-seven .wrapper{
+    position: relative;
+    z-index: 20;
 }
 
 svg.fire {
     position: absolute;
-    fill: rgba(218, 53, 53, 0.543);
-    bottom: 0;
+    fill: rgb(222, 139, 118);
+    bottom: 0%;
+    right: 10%;
     z-index: 10;
+    width: 25%;
     
+}
+
+button {
+    align-self: center;
+    background-color: white;
+    border: black solid 2px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+    padding: 20px 30px;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-family: $font;
+
 }

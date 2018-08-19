@@ -250,18 +250,6 @@ form {
   position: relative;
   z-index: 30; }
 
-.title-page .wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center; }
-
 svg.snow {
   fill: #e3f3f5;
   height: 80px;
@@ -480,36 +468,165 @@ svg.drop {
   -webkit-animation-timing-function: linear;
   animation-timing-function: linear; }
 
+svg.flame {
+  fill: #EF866C;
+  position: absolute;
+  width: 130px; }
+
+@-webkit-keyframes flame1 {
+  0% {
+    top: 90%;
+    left: 85%; }
+  100% {
+    top: 63%;
+    left: 85%; } }
+
+@keyframes flame1 {
+  0% {
+    top: 90%;
+    left: 85%; }
+  100% {
+    top: 63%;
+    left: 85%; } }
+
+@-webkit-keyframes flame2 {
+  0% {
+    top: 90%;
+    left: 50%; }
+  100% {
+    top: 63%;
+    left: 50%; } }
+
+@keyframes flame2 {
+  0% {
+    top: 90%;
+    left: 50%; }
+  100% {
+    top: 63%;
+    left: 50%; } }
+
+@-webkit-keyframes flame3 {
+  0% {
+    top: 90%;
+    left: 75%; }
+  100% {
+    top: 63%;
+    left: 75%; } }
+
+@keyframes flame3 {
+  0% {
+    top: 90%;
+    left: 75%; }
+  100% {
+    top: 63%;
+    left: 75%; } }
+
+.flame1 {
+  -webkit-animation-name: flame1;
+  animation-name: flame1;
+  -webkit-animation-duration: 7s;
+  animation-duration: 7s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear; }
+
+.flame2 {
+  -webkit-animation-name: flame2;
+  animation-name: flame2;
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear; }
+
+.flame3 {
+  -webkit-animation-name: flame3;
+  animation-name: flame3;
+  -webkit-animation-duration: 6s;
+  animation-duration: 6s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear; }
+
+.title-page .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
 .question-two {
   position: relative; }
+  .question-two .wrapper {
+    position: relative;
+    z-index: 20; }
 
 svg.wolf {
   fill: #cef1f7;
   width: 40%;
   position: absolute;
   bottom: 0;
-  right: 200px; }
+  right: 200px;
+  z-index: 10; }
+
+.question-seven .wrapper {
+  position: relative;
+  z-index: 20; }
 
 svg.fire {
   position: absolute;
-  fill: rgba(218, 53, 53, 0.543);
-  bottom: 0;
-  z-index: 10; }
+  fill: #de8b76;
+  bottom: 0%;
+  right: 10%;
+  z-index: 10;
+  width: 25%; }
+
+button {
+  -ms-flex-item-align: center;
+  align-self: center;
+  background-color: white;
+  border: black solid 2px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  padding: 20px 30px;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  font-family: "Lato"; }
+
+.your-results {
+  position: relative;
+  height: 100vh; }
+  .your-results h1 {
+    margin: 0;
+    font-family: "Oswald"; }
+  .your-results img {
+    width: 40%;
+    position: absolute;
+    z-index: 10;
+    right: 7%; }
+  .your-results p {
+    font-family: "Lato";
+    font-size: 2rem; }
 
 .results-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start; }
-
-.your-results h1 {
-  margin: 0; }
-
-.your-results img {
-  width: 50%; }
-
-.your-results p {
-  font-family: "Lato";
-  font-size: 2rem; }
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-bottom: 100px;
+  position: relative;
+  z-index: 20; }

@@ -1,6 +1,12 @@
 .question-two {
     position: relative;
+    .wrapper {
+        position: relative;
+        z-index: 20;
+    }
 }
+
+
 
 svg.wolf {
     fill: #cef1f7;
@@ -8,5 +14,6 @@ svg.wolf {
     position: absolute;
     bottom: 0;
     right: 200px;
+    z-index: 10;
 
 }
