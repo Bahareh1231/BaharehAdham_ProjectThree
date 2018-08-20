@@ -99,7 +99,7 @@ $(function() {
             let header = $('<h1>').text(family.name); // make an h1 element with the house name in it
             let image = $('<img>').attr('src', family.pic);
             let text = $('<p>').text(family.text).addClass(family.color);
-            let reTry = `<div class="tryAgain button animated infinite pulse"><p><a href="">Try again</a></p></div>`;
+            let reTry = `<div class="tryAgain button animated infinite pulse"><p><a href="">Play Again</a></p></div>`;
 
             $('.your-results').addClass('page');
 

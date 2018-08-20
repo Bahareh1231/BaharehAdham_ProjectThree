@@ -2,6 +2,19 @@ html {
     font-size: 16px;
     
 }
+
+@media (max-width: 750px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 350px) {
+    html {
+        font-size: 12px;
+    }
+}
+
 body {
     position: relative;
     background: #fcac98;  /* fallback for old browsers */
@@ -24,6 +37,19 @@ body {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+}
+
+
+@media (max-width: 750px) {
+    .wrapper {
+        width: 85%;
+    }
+}
+
+@media (max-height: 400px) {
+    .wrapper {
+        flex-direction: row;
+    }
 }
 
 .button {
@@ -84,6 +110,12 @@ fieldset {
 h1 {
     font-family: $cursive;
     font-size: 5rem;
+}
+
+@media (max-width: 450px) {
+    h1 {
+        font-size: 3.5rem;
+    }
 }
 
 

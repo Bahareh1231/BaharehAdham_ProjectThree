@@ -148,6 +148,14 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 html {
   font-size: 16px; }
 
+@media (max-width: 750px) {
+  html {
+    font-size: 14px; } }
+
+@media (max-width: 350px) {
+  html {
+    font-size: 12px; } }
+
 body {
   position: relative;
   background: #fcac98;
@@ -180,6 +188,17 @@ body {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center; }
+
+@media (max-width: 750px) {
+  .wrapper {
+    width: 85%; } }
+
+@media (max-height: 400px) {
+  .wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row; } }
 
 .button {
   background: white;
@@ -236,6 +255,10 @@ fieldset {
 h1 {
   font-family: "Oswald";
   font-size: 5rem; }
+
+@media (max-width: 450px) {
+  h1 {
+    font-size: 3.5rem; } }
 
 input {
   display: none; }
@@ -585,6 +608,11 @@ form {
   right: 10%;
   z-index: 10;
   width: 25%; }
+
+@media (max-height: 500px) {
+  .dragon {
+    bottom: 8.5%;
+    right: 5%; } }
 
 button {
   -ms-flex-item-align: center;
