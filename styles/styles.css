@@ -250,10 +250,9 @@ form {
   position: relative;
   z-index: 30; }
 
-svg.snow {
-  fill: #e3f3f5;
-  height: 80px;
-  position: absolute; }
+.snow {
+  position: absolute;
+  width: 80px; }
 
 @-webkit-keyframes flake {
   0% {
@@ -319,7 +318,7 @@ svg.snow {
     top: 30%;
     left: 10%; } }
 
-.snow {
+.snow1 {
   -webkit-animation-name: flake;
   animation-name: flake;
   -webkit-animation-duration: 7s;
@@ -359,9 +358,8 @@ svg.snow {
   -webkit-animation-timing-function: linear;
   animation-timing-function: linear; }
 
-svg.drop {
-  fill: #e3f3f5;
-  height: 80px;
+.drop {
+  width: 80px;
   position: absolute; }
 
 @-webkit-keyframes rain1 {
@@ -468,7 +466,7 @@ svg.drop {
   -webkit-animation-timing-function: linear;
   animation-timing-function: linear; }
 
-svg.flame {
+.flame {
   fill: #EF866C;
   position: absolute;
   width: 130px; }
@@ -569,8 +567,7 @@ svg.flame {
     position: relative;
     z-index: 20; }
 
-svg.wolf {
-  fill: #cef1f7;
+.wolf {
   width: 40%;
   position: absolute;
   bottom: 0;
@@ -581,10 +578,10 @@ svg.wolf {
   position: relative;
   z-index: 20; }
 
-svg.fire {
+.dragon {
   position: absolute;
   fill: #de8b76;
-  bottom: 0%;
+  bottom: 2%;
   right: 10%;
   z-index: 10;
   width: 25%; }
@@ -602,20 +599,17 @@ button {
   font-size: 1.2rem;
   font-family: "Lato"; }
 
-.your-results {
-  position: relative;
-  height: 100vh; }
-  .your-results h1 {
-    margin: 0;
-    font-family: "Oswald"; }
-  .your-results img {
-    width: 40%;
-    position: absolute;
-    z-index: 10;
-    right: 7%; }
-  .your-results p {
-    font-family: "Lato";
-    font-size: 2rem; }
+.your-results h1 {
+  margin: 0;
+  font-family: "Oswald"; }
+
+.your-results img {
+  width: 30%; }
+
+.your-results p {
+  font-family: "Lato";
+  font-size: 1.4rem;
+  text-align: center; }
 
 .results-wrapper {
   display: -webkit-box;
@@ -627,6 +621,4 @@ button {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding-bottom: 100px;
-  position: relative;
-  z-index: 20; }
+  padding-bottom: 100px; }

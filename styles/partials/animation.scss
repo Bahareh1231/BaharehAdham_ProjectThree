@@ -1,10 +1,9 @@
 // *********** SNOW FLAKES **************
 
-svg.snow {
-    fill: #e3f3f5;
-    height: 80px;
-    position: absolute; 
-   
+
+.snow {
+    position: absolute;
+    width: 80px;
 }
 
 @keyframes flake {
@@ -52,7 +51,7 @@ svg.snow {
 }
 
 
-.snow {
+.snow1 {
     animation-name: flake;
     animation-duration: 7s;
     animation-iteration-count: infinite;
@@ -82,9 +81,8 @@ svg.snow {
 
 // *********** RAINDROPS ***************
 
-svg.drop {
-    fill: #e3f3f5;
-    height: 80px;
+.drop {
+    width: 80px;
     position: absolute;
 }
 
@@ -172,7 +170,7 @@ svg.drop {
 
 // ***************** FIRE FLAMES ***************
 
-svg.flame {
+.flame {
     fill: #EF866C;
     position: absolute;
     width: 130px
